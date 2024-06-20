@@ -21,12 +21,12 @@ public class Main {
         if (tries > 0) {
             clear();
         }
-        System.out.print("Guess a number: ");
+        System.out.print("Rock, Paper or Scissors: ");
         Scanner scanGuess = new Scanner(System.in);
-        int guessNum = scanGuess.nextInt();
+        String guessNum = scanGuess.nextLine();
         tries++;
 
-        if (guessNum == randomNum) {
+        if (guessNum.equals(randomNum)) {
             System.out.println("Correct!");
             score++;
             System.out.println("Your score is: " + score);
