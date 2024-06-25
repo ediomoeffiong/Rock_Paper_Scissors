@@ -12,7 +12,7 @@ public class Main {
     public static int randomNum = random.nextInt((max - min + 1) - min);
 
     public static void main(String[] args) {
-        System.out.println("Holla!");
+        System.out.println("Rock, Paper or Scissors");
 
         guess();
     }
@@ -21,6 +21,7 @@ public class Main {
         if (tries > 0) {
             clear();
         }
+
         System.out.print("Rock, Paper or Scissors: ");
         Scanner scanGuess = new Scanner(System.in);
         String guessNum = scanGuess.nextLine();
