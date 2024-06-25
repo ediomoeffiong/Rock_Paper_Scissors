@@ -7,6 +7,7 @@ public class Main {
     public static int compScore = 0;
     public static int r;
     public static String[] list = {"rock", "paper", "scissors"};
+
     public static void main(String[] args) {
         Random random = new Random();
         r = random.nextInt(3);
@@ -58,8 +59,6 @@ public class Main {
     }
 
     public static void playAgain(String status) {
-
-
         if (status.equals("won")) {
             yourScore++;
             System.out.println("I chose " + list[r] + ", you won");
