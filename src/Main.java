@@ -12,15 +12,16 @@ public class Main {
         Random random = new Random();
         r = random.nextInt(3);
 
-        System.out.println("Warning: Make sure capslock is off");
         System.out.print("Rock, Paper or Scissors: ");
         Scanner scanChoice = new Scanner(System.in);
         String choice = scanChoice.nextLine();
 
         System.out.println("\n");
 
+        String lower = choice.toLowerCase();
+
         for (int i = 0; i < 3; i++) {
-            switch (choice) {
+            switch (lower) {
                 case "rock":
                     if (list[r].equals("rock")) {
                         playAgain("draw");
